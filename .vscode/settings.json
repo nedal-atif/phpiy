@@ -1,0 +1,5 @@
+{
+  "editor.fontWeight": "normal",
+  "editor.fontFamily": "Consolas, 'Courier New', monospace , cairo",
+  "diffEditor.experimental.showEmptyDecorations": true
+}
