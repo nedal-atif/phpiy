@@ -6,15 +6,20 @@ require __DIR__ . "/../../vendor/autoload.php";
 
 
 use Framework\App;
-use function App\Config\registerRoutes;
+use App\Config\Paths;
+
+
+
+use function App\Config\{registerRoutes, registerMiddelware};
 
 
 
 
 
-$app = new App();
+$app = new App(Paths::SOURCE . "app/container-definitions.php");
 
 registerRoutes($app);
+registerMiddelware($app);
 
 
 
